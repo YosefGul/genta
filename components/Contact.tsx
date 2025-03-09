@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { MessageCircle, Mail, Phone, MapPin, Instagram, Send, Twitter, Linkedin } from "lucide-react"
+import { MessageCircle, Mail, Phone, MapPin, Instagram, Send, Twitter, Linkedin, CreativeCommons } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -193,8 +193,8 @@ export default function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 border-t border-gray-800 pt-8 text-center">
-          <p className="mb-4 text-gray-400">2024 | Tüm Hakları Saklıdır</p>
+        <div className="mb-20 mt-16 flex items-center justify-center gap-3 border-t border-gray-800 pt-8">
+          <p className="text-gray-400">2024 | Tüm Hakları Saklıdır</p>
           <div className="flex justify-center space-x-4">
             {contactInfo.socialMedia.instagram && (
               <a href={contactInfo.socialMedia.instagram} className="text-gray-400 transition-colors hover:text-white">
@@ -204,7 +204,10 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <a href="https://www.linkedin.com/in/yusuf-ihsan-g%C3%BCl-237a821ab/" className="mx-auto mt-4 flex w-fit gap-3 text-center text-gray-400" target="_blank">Created By <CreativeCommons /> <span className="text-blue-700">Yusuf İhsan Gül</span></a>
+      <div className="mt-4 text-center text-gray-400">Created with Ömer Ekin</div>
     </section>
+    
   )
 }
 
